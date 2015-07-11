@@ -8,4 +8,4 @@ A simple PowerShell script to check free HDD space on network machines.
 3. The script will run and output the free space values on your screen.
 
 # Tips:
-* If you face this error **HDDChecker.ps1 cannot be loaded because the execution of scripts is disabled on this system** , execute this command on the same powershell terminal: Set-ExecutionPolicy RemoteSigned
+* If you face this error **HDDChecker.ps1 cannot be loaded because the execution of scripts is disabled on this system** , execute this command on the same powershell terminal: `Set-ExecutionPolicy RemoteSigned`
