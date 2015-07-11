@@ -10,7 +10,7 @@ A simple PowerShell script to check free HDD space on network machines.
 # Tips:
 * If you face this error **HDDChecker.ps1 cannot be loaded because the execution of scripts is disabled on this system** , execute this command on the same powershell terminal: `Set-ExecutionPolicy RemoteSigned`
 * If you want to add a new drive letter, copy this code and paste it inside the foreach loop, then change the drvie letter:
-'	$disk = Get-WmiObject Win32_LogicalDisk -ComputerName $Server -Filter "DeviceID='D:'" | Select-Object Size,FreeSpace
+`	$disk = Get-WmiObject Win32_LogicalDisk -ComputerName $Server -Filter "DeviceID='D:'" | Select-Object Size,FreeSpace
     if ([math]::Round(($disk.FreeSpace / $ConvertToGB)) -eq 0) {continue}
 	"		Free Space D: " + [math]::Round(($disk.FreeSpace / $ConvertToGB),2) + " GB"
-'
+`
